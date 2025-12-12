@@ -18,13 +18,13 @@ handler500 = handler500
 urlpatterns += [
     path('', include('src.web.urls')),
     path('', include('src.api.urls')),
-    path('', include('src.apps.whisper.urls')),
+  #  path('', include('src.apps.whisper.urls')),
 ]
 
 """ EXTERNAL REQUIRED APPS ----------------------------------------------------------------------------------------- """
 urlpatterns += [
     path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
+  #  path('accounts/', include('allauth.urls')),
     # path('inbox/notifications/', include('notifications.urls', namespace='notifications')),
 
 ]
