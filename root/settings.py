@@ -64,14 +64,10 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
     'drf_yasg',
 
-    # YOUR APPS
-    'src.core.apps.CoreConfig',
-    'src.services.accounts.apps.AccountsConfig',
 
     # WEB APPS
     'src.web.website',
-    'src.web.admins',
-    'src.apps.whisper.apps.WhisperConfig',
+
 
     # mailchimp
     'mailchimp_transactional',
