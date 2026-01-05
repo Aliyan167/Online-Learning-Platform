@@ -26,16 +26,6 @@ class GoogleConnect(SocialConnectView):
     callback_url = GOOGLE_CALLBACK_ADDRESS
     client_class = OAuth2Client
 
-class AppleLogin(SocialLoginView):
-    adapter_class = AppleOAuth2Adapter
-    callback_url = APPLE_CALLBACK_ADDRESS
-    client_class = OAuth2Client
-
-class AppleConnect(SocialConnectView):
-    adapter_class = AppleOAuth2Adapter
-    callback_url = APPLE_CALLBACK_ADDRESS
-    client_class = OAuth2Client
-
 
 class CustomLoginView(LoginView):
     serializer_class = LoginSerializer

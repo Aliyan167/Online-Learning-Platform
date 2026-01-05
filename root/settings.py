@@ -67,6 +67,7 @@ INSTALLED_APPS = [
 
     # WEB APPS
     'src.web.website',
+    'src.services.accounts',
 
 
     # mailchimp

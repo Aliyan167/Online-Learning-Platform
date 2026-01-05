@@ -5,7 +5,7 @@ from dj_rest_auth.views import (
 )
 from .views import (
     UserRetrieveChangeAPIView, CustomLoginView, DeactivateUserAPIView, DeleteUserAPIView, GoogleLogin, GoogleConnect,
-    AppleLogin, AppleConnect
+
 )
 
 app_name = 'auth'
@@ -27,6 +27,5 @@ urlpatterns += [
 
     path('google/', GoogleLogin.as_view(), name='google_login'),
     path('google-connect/', GoogleConnect.as_view(), name='google_connect'),
-    path('apple/', AppleLogin.as_view(), name='apple_login'),
-    path('apple-connect/', AppleConnect.as_view(), name='apple_connect'),
+
 ]
